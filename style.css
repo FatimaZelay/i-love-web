@@ -411,7 +411,56 @@ nav ul a:hover {
 	animation: fade_move_down 2s ease-in-out infinite;
 }
 
+footer {
+    text-align: center; /* Footerinhoud centreren */
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .blog-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #fff;
+    color: rgb(22, 8, 8); /* Witte tekst */
+    padding: 10px 20px; /* Binnenruimte van de knop */
+    border-radius: 5px; /* Afronding van de hoeken */
+    font-size: 16px; /* Tekstgrootte */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Animatie toevoegen */
+  }
+  
+  .blog-button:hover {
+    background-color: #000000; /* Donkerdere blauw bij hover */
+    transform: translateY(-5px); /* Lichte beweging omhoog */
+    background-color:#fff 
+  }
+  
 
+/* animatie voor de button  */
+
+/* @keyframes bounceIn {
+    from, 20%, 40%, 60%, 80%, to { animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+    0% { opacity: 0; transform: scale3d(0.3, 0.3, 0.3); }
+    20% { transform: scale3d(1.1, 1.1, 1.1); }
+    40% { transform: scale3d(0.9, 0.9, 0.9); }
+    60% { opacity: 1; transform: scale3d(1.03, 1.03, 1.03); }
+    80% { transform: scale3d(0.97, 0.97, 0.97); }
+    to { opacity: 1; transform: scale3d(1, 1, 1); }
+  }
+
+  .boucenIn { animation: bounceIn 5s infinite; } */
+
+  /* infinite weg gehaald */
+  /* .bounceIn {
+    animation: bounce 0.5s ease-in-out; /* Animatie duurt 0.5 seconden */
+  /* }
+  
+  @keyframes button {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-30px)}
+    60% { transform: translateY(-15px);}
+  } */ 
+  
+  
 /*animated scroll arrow animation*/
 @-webkit-keyframes fade_move_down {
  0% {
@@ -452,164 +501,9 @@ transform:translate(0, 10px) rotate(45deg);
 opacity: 0;
 }
 }
-/* About Section
-********************************************************************* */
 
-#about {
-	padding: 100px 0 50px 0;
-}
-/* Team Section
-********************************************************************* */
-#team {
-	padding: 50px 0 100px 0;
-}
-#team .icon {
-	font-size: 26px;
-}
-/* Skills Section
-********************************************************************* */
-#skills {
-	padding: 100px 0 100px 0;
-	background-color: #F5F5F5;
-}
-.progressBar {
-	margin-bottom: 26px;
-	margin-bottom: 1.66em;
-}
-.progressBar h4 {
-	font-size: 16px;
-	text-transform: none;
-	margin-bottom: 7px;
-	margin-bottom: .33em;
-}
-.progressBarContainer {
-	width: 100%;
-	height: 8px;
-	background: #E1E1E1;
-	overflow: hidden;
-}
-.progressBarValue {
-	height: 8px;
-	float: left;
-	background: #e55d87; /* Old browsers */
-	background: -moz-linear-gradient(-45deg, #e55d87 0%, #e5b8c6 100%);
-	background: -webkit-linear-gradient(-45deg, #e55d87 0%, #e5b8c6 100%);
-	background: linear-gradient(135deg, #e55d87 0%, #e5b8c6 100%);
-}
-.value-00 {
-	width: 0;
-}
-.value-10 {
-	width: 10%;
-}
-.value-20 {
-	width: 20%;
-}
-.value-30 {
-	width: 30%;
-}
-.value-40 {
-	width: 40%;
-}
-.value-50 {
-	width: 50%;
-}
-.value-60 {
-	width: 60%;
-}
-.value-70 {
-	width: 70%;
-}
-.value-80 {
-	width: 80%;
-}
-.value-90 {
-	width: 90%;
-}
-.value-100 {
-	width: 100%;
-}
-/* Portfolio Section
-********************************************************************* */
-#portfolio {
-	padding: 100px 0 100px 0;
-}
-.image {
-	background-color: #5a5a5a;
-	width: 100%;
-	height: auto;
-	margin-left: auto;
-	margin-right: auto;
-	transition: .5s;
-}
-.image:hover {
-	opacity: 0.6;
-	transition: .3s;
-	background-image: url(../images/hoverbg.png);
-	background-repeat: no-repeat;
-	background-position: center;
-}
 
-/* Testimonial Section
-********************************************************************* */
-#testimonial {
-	background-color: #F5F5F5;
-	padding: 100px 0 100px 0;
-}
-.quoteLoop {
-	height: auto;
-	width: 100%;
-	margin: 0 auto;
-	position: relative;
-}
-.quote {
-	margin: 10px 30px;
-	height: inherit;
-	top: 0px;
-	display: none;
-	text-align: center;
-}
-/* Contact Section
-********************************************************************* */
-#contact {
-	padding: 100px 0 100px 0;
-}
-input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, select {
-	height: 38px;
-	padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
-	background-color: #F5F5F5;
-	border: none;
-	box-shadow: none;
-	box-sizing: border-box;
-	border-radius: 0;
-	outline: none;
-}
-textarea {
-	min-height: 250px;
-}
-input[type="submit"] {
-	display: inline-block;
-	height: 38px;
-	padding: 0 30px;
-	color: #fff;
-	text-align: center;
-	font-size: 11px;
-	font-weight: 600;
-	line-height: 38px;
-	letter-spacing: .1rem;
-	text-transform: uppercase;
-	text-decoration: none;
-	white-space: nowrap;
-	background: #e5b8c6;
-	border-radius: 0px;
-	border: 0;
-	cursor: pointer;
-	box-sizing: border-box;
-}
-input[type="submit"]:hover {
-	background: #e55d87;
-	text-decoration: none;
-}
+
 /* Footer Section
 ********************************************************************* */
 footer {
@@ -651,7 +545,7 @@ li {
 }
 /* Spacing
 ********************************************************************* */
-button, .button {
+button {
 	margin-bottom: 1rem;
 }
 input, textarea, select, fieldset {
