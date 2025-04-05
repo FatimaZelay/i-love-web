@@ -1,0 +1,28 @@
+{
+  "name": "i-love-web",
+  "version": "1.0.0",
+  "description": "Mijn I Love web",
+  "homepage": "https://github.com/FatimaZelay/i-love-web#readme",
+  "bugs": {
+    "url": "https://github.com/FatimaZelay/i-love-web/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FatimaZelay/i-love-web.git"
+  },
+  "license": "ISC",
+  "author": "Fatima El Ayadi",
+  "type": "module",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "liquidjs": "^10.21.0",
+    "marked": "^15.0.7"
+  }
+}

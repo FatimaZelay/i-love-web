@@ -1,0 +1,31 @@
+{% render 'partials/head.liquid' %}
+
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning Journal (voor nu)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Learning Journal (voor nu)</h1>
+    </header>
+
+    <main>
+        <section class="intro">
+            <p>Welkom op mijn leerjournaal! Hier houd ik mijn voortgang bij van projecten, wat ik leer en hoe ik groei als developer.</p>
+        </section>
+    </main>
+    
+    <section> 
+        {% for file in files %}
+            <a href="/index/{{ file | slice:0, -3}}">{{ file | slice:0, -3}}</a>
+            <!-- Met slice haal je de laatste 3 karakters weg, in dit geval .md. -->
+        {% endfor %}
+    </section>
+    
+    {{ files | json }}
+    
